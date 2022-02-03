@@ -1,0 +1,56 @@
+body * {
+
+}
+
+
+/* Adding a background color to the top navigation */
+#menu {position: fixed;
+	background-color: #f7971e; width: 99%;
+
+
+	overflow: hidden;
+border-radius: 5px;
+
+box-shadow: 2px 14px 20px #8b633a;
+
+
+}
+/* Styling the links inside the navigation bar */
+.menu a {
+  text-align: center;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  float:right;
+  
+ }
+
+ 
+/* Changing the color of links on hover */
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+/* Adding a color to the active/current link */
+.menu a.active {
+  background-color: white;
+  color:#a47444;
+  
+}
+
+/* Right-aligned section inside the top navigation */
+.right {
+float:right;
+text-align: center;
+    
+}
+/* styling the logo */
+#logo { 
+  width: 1px;
+  height: 1px;
+
+}
+
