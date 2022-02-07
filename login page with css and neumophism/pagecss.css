@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,700&display=swap');
+*{
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  height:100vh;
+  width:100vw;
+  font-family: 'Lato', sans-serif;
+  overflow:hidden;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#555;
+  background:#f7971e;
+  
+  
+}
+.login-div {
+  width:430px;
+  height:600px;
+  border-radius:50px;
+  padding: 60px 35px 35px 35px;
+ border-radius: 33px;
+background: #f7971e;
+box-shadow:  5px 5px 10px #d2801a,
+             -5px -5px 10px #ffae23;
+}
+.logo {
+  width:100px;
+  height:100px;
+  background: url("shu\ hubb.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius:90%;
+  margin:0 auto;
+border-radius: 50%;
+box-shadow:  5px 5px 10px #d2801a,
+             -5px -5px 10px #ffae23;
+}
+
+.title {
+  text-align:center;
+  font-size: 29px;
+  padding-top:24px;
+  letter-spacing:0.5px;
+  color: #fff;
+  
+}
+.sub-title {
+  text-align:center;
+  font-size:15px;
+  padding-top:7px;
+  letter-spacing:3px;
+  color: #fff;
+}
+.fields {
+  padding:75px 5px 5px 5px;
+  width:100%;
+  border-radius: 33px;
+}
+  
+.fields input {
+  border:none;
+  outline:none;
+  background:none;
+  font-size:18px;
+  padding:20px 10px 20px 5px;
+
+  
+}
+.username,
+.password {
+  margin-bottom:30px;
+  border-radius:25px;
+  border-radius: 33px;
+  background: linear-gradient(145deg, #de881b, #ffa220);
+  box-shadow:  5px 5px 10px #d2801a,
+               -5px -5px 10px #ffae23;
+    
+
+}
+.fields svg {
+  height:25px;
+  margin:0 10px -3px 25px;
+}
+.signing-button {
+  border:none;
+  cursor:pointer;
+  outline:none;
+  height:60px;
+  width:100%;
+  font-size:20px;
+  border-radius:30px;
+  font-weight:700;
+  font-family: 'Lato', sans-serif;
+  color:#fff;
+  text-align:center;
+  border-radius: 65px;
+  background: linear-gradient(145deg, #000000, #000000);
+
+  transition: all 0.5s ;
+}
+.signing-button:hover {
+  background-color:#50e5b9;
+}
+.signing-button:active {
+  background-color: #88ef9e;
+}
+.link {
+  padding-top:20px;
+  text-align:center;
+  
+}
+.link a {
+  text-decoration:none;
+  color:#fff;
+  font-size:15px;
+}
