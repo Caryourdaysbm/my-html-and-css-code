@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+  }
+body
+{
+    text-align: center;
+    align-content: center;
+    padding: 70px;
+}
+button {
+
+    color: white;
+    background-color: blue;
+    padding: 0.3rem 0.6rem;
+    transition: 0.8s;
+    cursor: pointer;
+    border-radius: 5px;}
+button:hover {
+    background-color: brown;
+}
+button:
