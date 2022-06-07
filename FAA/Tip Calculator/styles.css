@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body {
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.wrapper .header{
+
+    text-align: center;
+
+}
+
+.wrapper{
+width: 80%;
+margin: 0 auto;
+
+}
+.calc{
+    width: 100%;
+    background-color:hsl(0, 0%, 100%) ;
+    padding: 2rem;
+
+}
