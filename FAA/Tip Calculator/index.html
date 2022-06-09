@@ -13,59 +13,67 @@
 <body> 
       
     <div class="wrapper">
-        <h3 class="header">SPLI<br />TER
+        <h3 class="header">S P L I<br />T T E R
         </h3> 
   <div class="calc">
+    <div class="left">
+        <div class="cl-input">
+            <label for="bill">Bill</label>
+            <div class="bill-input">
+         <object data="design/images/icon-dollar.svg" type=""></object>
+            <input id ="bill" type="number" aria-label="bill" placeholder="0">
+           
+            </div>
+        </div>  
+        <h3 class="percents-title">Select Tip %</h3>
+        <div class="percents">
+            <div class="cl-percent">5%</div>
+            <div class="cl-percent">10%</div>
+            <div class="cl-percent">15%</div>
+            <div class="cl-percent">25%</div>
+            <div class="cl-percent">50%</div>
+            <div class="cl-percent-custom">Custom</div>
+        </div>
+        <div class="cl-input">
+          <label for="people">Number of People</label>
+          <div class="bill-input">
+            <object data="design/images/icon-person.svg" type=""></object>
+          <input id ="people" type="number" aria-label="Number of People" placeholder="0" min="1">
+          
+          </div>
+      </div> 
+      </div>
     <div class="right">
+       <div class="rwrapper">
         <div class="ratio">
             <div class="tip-info">
                 <h3 class="title"> Tip Amount</h3>
                 <p class="subtle">/ person</p>
-               <h3 class="tip-amount">$0.00</h3>
+                </div>
+               <div>
+                   <h3 class="tip-amount">$0.00</h3>
+               </div>
             </div>
-        </div>
+        
         <div class="ratio">
              <div class="tip-info">
             <h3 class="title"> Total</h3>
             <p class="subtle">/ person</p>
-         <h3 class="tip-amount">$0.00</h3>
-        
+             </div>
+        <div>
+         <h3 class="tip-amount">$0.00</h3>        
         </div>
-        
-    </div>
-    <div class="tip-action">
-        <button class="reset-btn">
-            RESET
-        </button>
-    </div>
+             </div>
+       </div>
+    
+             <div class="tip-action">
+                <button type="reset" class="reset-btn"> RESET
+                </button>        </div>
+    
+    
 
     </div>
-    <div class="left">
-      <div class="cl-input">
-          <label for="bill">Bill</label>
-          <div class="bill-input">
-          <span>$</span>
-          <input id ="bill" type="number" aria-label="bill">
-          <span>0</span>
-          </div>
-      </div>  
-      <div class="percents">
-          <div class="cl-percent">5%</div>
-          <div class="cl-percent">10%</div>
-          <div class="cl-percent">15%</div>
-          <div class="cl-percent">25%</div>
-          <div class="cl-percent">50%</div>
-          <div class="cl-percent cl-percent-custom">Custom</div>
-      </div>
-      <div class="cl-input">
-        <label for="people">Number of People</label>
-        <div class="bill-input">
-        <span>$</span>
-        <input id ="people" type="number" aria-label="Number of People">
-        <span>0</span>
-        </div>
-    </div> 
-    </div>
+    
 </div> 
 </div> 
 

@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
+
 html,body {
     font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);
@@ -12,19 +13,191 @@ html,body {
     justify-content: center;
 }
 .wrapper .header{
-
     text-align: center;
-
+    margin: 2rem 0;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+    font-size: 0.8rem;
+    padding: 25px;
 }
 
 .wrapper{
-width: 80%;
+width: 75%;
 margin: 0 auto;
 
 }
 .calc{
     width: 100%;
     background-color:hsl(0, 0%, 100%) ;
-    padding: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    
+}
+.left, .right{
+    width: 50%;
+    align-self:stretch;
+    min-height: 100%;
+}
 
+.left{
+    margin-right: 20px;
+    
+}
+
+.cl-input{
+    margin-bottom: 2rem;
+}
+.cl-input label, .percents-title{
+    color: hsl(184, 14%, 56%);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.bill-input{
+    width: 100%;
+    display:flex;
+    background-color: hsl(189, 41%, 97%);
+    padding: 0.4rem 0;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color: hsl(183, 100%, 15%);
+}
+.bill-input:hover,
+.bill-input:focus-within {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.bill-input input{
+    width: 100%;
+   border: none;
+   background-color: transparent;
+    padding-right: 15px;
+    font-weight: 700;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    
+}
+.bill-input input:focus{
+    outline: none;
+}
+.bill-input input::placeholder{
+    color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+}
+.bill-input input:out-of-range{
+    color: red;
+    border-color: red;
+}
+.bill-input object {
+margin-top: 5px;
+}
+.bill-input input[type=number]::-webkit-inner-spin-button,
+.bill-input input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.percents{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap
+    
+    
+}
+.cl-percent {
+    background-color: hsl(183, 100%, 15%);
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    width: 30%;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.cl-percent:active {
+    background-color: hsl(185, 41%, 84%);
+}
+.cl-percent-custom{
+    background-color: hsl(189, 41%, 97%);
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    width: 30%;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+.right{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (max-width:760px){
+    .calc{
+        flex-direction: column;
+    }
+    .left, .right{
+        width: 100%;
+        align-self: stretch;
+        min-height: 100%;
+
+    }
+    .cl-percent {
+        text-align: center;
+        font-size: 1rem;
+
+    }
+    
+}
+.rwrapper{
+    
+}
+
+.ratio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+.tip-info .title
+{
+   font-size: 0.8rem;
+    color: hsl(0, 0%, 100%) ;
+    font-weight: 700;
+}
+.tip-info .subtle{
+    font-size: 0.6rem;
+    color: hsl(189, 41%, 97%) ;
+    opacity: 0.5;
+font-weight: 700;
+}
+.tip-amount{
+    font-size: 2rem;
+    color: hsl(172, 67%, 45%);
+}
+.tip-action{
+
+}
+.reset-btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border:  none;
+    background-color: hsl(183, 100%, 20%);
+    font-family: inherit;
+    font-size: 1.1rem;
+    color: hsl(183, 100%, 15%);
+
+}
+.reset-btn:active{
+    background-color: hsl(185, 41%, 84%);
 }
