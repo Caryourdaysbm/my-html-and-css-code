@@ -9,28 +9,6 @@ html, body{
   
   
 }
-@media screen and (max-width: 760px) {
-    .nav-bar { display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      h1{
-        font-size: 59px;
-    } 
-    span {
-        font-size: 59px;
-      }
-    h4{
-        color: #fcfcfc;
-        letter-spacing: 2px;
-        font-size: 3px;
-      }
-        h3{
-            color: white;
-            font-size: 2px;
-            margin-bottom: 50px;
-        }
-}
 
 .wrap{
     height: 70vh;
@@ -60,7 +38,7 @@ html, body{
      color: #FF1E56;
      
  }
- /* .content span{
+  /* .content span{
      margin: 30px 0px;
  } */
  
@@ -96,14 +74,20 @@ html, body{
  .content{
      position: absolute;
      top: 50%;
-     left: 5%;
+    width: 98%;
+    left: 2%;
      transform: translateY(-50%);
  }
  .intro {
      position: relative;
      padding-top: 120px;
 }
-
+.me{
+    display: flex;
+}
+.me p{
+    align-self: flex-end;
+}
  h1{
      color: white;
      margin: 5px 0px 2px;
@@ -152,13 +136,18 @@ html, body{
      transition: 2ms;
  }
  img{
-     height: 400px;
-     width: 430px;
-     border-radius: 15px
+     display: block;
+    margin: 0 auto 2rem;
+    margin-left: 48%;
+     max-width: 50%;
+     left: 50%;
+     height: 50%;
+     border-radius: 15px;
+    
  }
  .about{
      width: 100%;
-     padding: 100px 0px;
+     padding: 70px 0px;
      background-color: #F0ECE3;
 
  }
@@ -167,17 +156,21 @@ html, body{
  }
  .main{
      width: 1130px;
-     max-width: 95%;
+     max-width: 50%;
      margin: 0 auto;
-     display: flex;
      align-items: center;
      justify-content: space-around;
  }
  .about-text h2{
      color: #222831;
-     font-size: 75px;
+     display: block;
+     margin: 0 auto;
+     text-align: right;
+     font-size: 25px;
      text-transform: capitalize;
      margin-bottom: 20px;
+     margin-left: auto;
+     margin-right: auto;
  }
 .about-text h5{
     color: #222831;
@@ -217,7 +210,7 @@ button:hover{
 .title h2{
     color: white;
     font-size: 75px;
-    width: 1130px;
+    width: 100%;
     margin: 30px auto;
     text-align: center;
 }
@@ -229,7 +222,7 @@ button:hover{
 }
 .card{
     height: 365px;
-    width: 335px;
+    width: 100%;
     padding: 20px 35px;
     background: #191919;
     border-radius: 20px;
@@ -288,6 +281,8 @@ h5{
     margin-top: 35px;
     text-transform: capitalize;
     align-items: center;
+    width: 100%;
+    text-align: center;
 }
 .contact-me .button-two{
     background-color: #FF1E56;
@@ -326,7 +321,7 @@ footer p:nth-child(1){
 footer p:nth-child(2){
     color: white;
     font-size: 17px;
-    width: 500px;
+    width: 100%;
     text-align: center;
     line-height: 26px;
 }
@@ -357,3 +352,63 @@ footer p:nth-child(2){
     bottom: 35px;
     font-size: 14px;
 }
+@media screen and (max-width: 820px) {
+    .nav-bar { display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+      }
+      h1{
+        font-size: 59px;
+        width: 100%;
+    } 
+   span {
+        font-size: 55px;
+      }
+.intro h1 span{
+              font-size: 47px;
+      }
+    h4{
+        color: #fcfcfc;
+        letter-spacing: 2px;
+        font-size: 20px;
+      }
+    h3{
+        color: white;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        /* .about-text h2{
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        .about-text h5{
+            font-size: 15px;
+        }
+        .about-text h5 span{
+            font-size:15px;
+        }
+        .about-text p{
+            font-size: 19px;
+        
+            margin-bottom: 45px;
+        } */
+        .main{
+           min-width: 100%;
+           
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+      .about-text{
+          width: 100%;
+      }
+     
+    }
