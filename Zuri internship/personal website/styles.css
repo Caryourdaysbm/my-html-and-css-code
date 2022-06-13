@@ -79,7 +79,7 @@ html, body{
      transform: translateY(-50%);
  }
  .intro {
-     position: absolute;
+     position: relative;
      padding-top: 5px;
 }
 .me{
@@ -140,8 +140,7 @@ html, body{
     margin: 0 auto 2rem;
     margin-left: 48%;
      max-width: 50%;
-     max-height: 50%;
-     left: 50%;
+
      border-radius: 15px;
     
  }
@@ -362,6 +361,7 @@ footer p:nth-child(2){
          display: flex;
          gap: 5px;
         margin-top: 2%;
+        z-index: 9;
         
     }
 
