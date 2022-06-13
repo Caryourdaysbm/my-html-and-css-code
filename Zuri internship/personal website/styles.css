@@ -140,8 +140,8 @@ html, body{
     margin: 0 auto 2rem;
     margin-left: 48%;
      max-width: 50%;
+     max-height: 50%;
      left: 50%;
-     height: 50%;
      border-radius: 15px;
     
  }
