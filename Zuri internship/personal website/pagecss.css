@@ -5,10 +5,10 @@
 }
 body {
   margin:0;
-  height:100vh;
-  width:100vw;
+  height:100%;
+  width:100%;
   font-family: 'Lato', sans-serif;
-  overflow:hidden;
+  overflow:scroll;
   font-weight:700;
   display:flex;
   align-items:center;
@@ -18,19 +18,23 @@ body {
   
   
 }
+@media screen and (max-height: 800px) {
+
+}
 .login-div {
-  width:430px;
-  height:600px;
+  width:860px;
+  height:1200px;
   border-radius:50px;
-  padding: 60px 35px 35px 35px;
+  margin-top: 420px;
+  padding: 120px 70px 70px 70px;
  border-radius: 33px;
 background: 000;
 box-shadow:  5px 5px 10px #d91a49,
              -5px -5px 10px #ff266c;
 }
 .logo {
-  width:100px;
-  height:100px;
+  width:200px;
+  height:200px;
   background: url("mee.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -43,21 +47,21 @@ box-shadow:  5px 5px 10px #d91a49,
 
 .title {
   text-align:center;
-  font-size: 29px;
-  padding-top:24px;
+  font-size: 56px;
+  padding-top:72px;
   letter-spacing:0.5px;
   color: #fff;
   
 }
 .sub-title {
   text-align:center;
-  font-size:15px;
-  padding-top:7px;
+  font-size:30px;
+  padding-top:21px;
   letter-spacing:3px;
   color: #fff;
 }
 .fields {
-  padding:75px 5px 5px 5px;
+  padding:150px 5px 5px 15px;
   width:100%;
   border-radius: 33px;
 }
