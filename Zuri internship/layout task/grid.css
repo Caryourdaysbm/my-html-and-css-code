@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-tab{
+    background: hsla(31, 77%, 52%);
+    grid-area: a;
+    height: 300px;
+    width: 100%;
+}
+
+.second-tab{
+    background: hsla(184, 100%, 21%);
+    width: 100%;
+    grid-area: b;
+}
+
+.third-tab{
+    background: hsla(179, 0%, 13%);
+    grid-area: c;
+    height:300px;
+}
+
+.fourth-tab{
+    background-color: aqua;
+    grid-area: d;
+}
+
+.fifth-tab{
+    background-color: blueviolet;
+    grid-area: e;
+}
+
+
+main{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+    /* height: 100vh; */
+    /* align-items: center; */
+    gap: 10px;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    palce-
+}
