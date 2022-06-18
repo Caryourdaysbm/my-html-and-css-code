@@ -1,88 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>layout</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <link
+      rel="shortcut icon"
+      href="/resources/favicon-32x32 (1).png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css-flex/flex.css" />
     <style>
-    
-        *{
+       @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Dancing+Script&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Lexend+Deca:wght@100&family=Poppins:wght@300&family=Roboto:ital,wght@1,100&family=Square+Peg&display=swap');
+*{
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: lexend deca;
+    font-size: 15px;
+    font-weight: 400;
 }
 
-main{
+  @media screen and (max-width: 1440px) {
  
-    background-color: hsl(0, 0%, 95%) ;
+
+
+.main-tab{
+    width: 50%;
+    margin: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
-}
-.wrapper {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
- align-content: center;
-    width:50%;
-    height:100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.text-area{
-    text-align: center;
     
 }
-.sedans, .suvs, .luxury {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.main-tab .first-tab{
+    background: hsla(31, 77%, 52%);
+    font-size: 16px;
+    height: 500px;
+    width: 100%;
+    padding: 40px 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.main-tab .second-tab{
+    background: hsla(184, 100%, 21%);
+    font-size: 16px;
+    height: 500px;
+    width: 100%;
+    padding: 40px 30px;
+}
+.main-tab .third-tab{
+    background: hsla(179, 0%, 13%);
+    font-size: 16px;
+    height: 500px;
+    width: 100%;
+    padding: 40px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h1{
+    font-size: 27px;
+    padding-top: 30px;
+    font-family: poppins;
+    color: hsl(0, 0%, 95%);
+    font-weight: bolder;
+}
+
+p{
+    padding-top: 30px;
+    line-height: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: poppins;
+    font-weight: 400;
+
+}
+
+
+.btn-1{
+    margin-top: 110px;
     align-items: center;
     text-align: center;
 }
+a{
+    border-radius: 20px;
+    padding: 10px 19px;
+    border-color: 2px hsl(0, 0%, 95%);
+    font-family: poppins;
+    text-decoration: none;
+    background: hsla(0, 0%, 100%, 0.75) ;
+}
+a:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: rgba(212, 207, 207, 0);
+    border-color: #f5f5f5;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+.btn-3{
+    margin-top: 88px;
+    text-align: center;
+    border-color: white;
+}
 
+.a-first{
+    color:hsla(31, 77%, 52%) ;
+    font-weight: bolder;
+    
+}
+.a-second{
+    color: hsla(184, 100%, 21%) ;
+    font-weight: bolder;
+}
+
+.a-third{
+    color: hsla(179, 0%, 13%);
+    font-weight: bolder;
+}
+  }
+
+@media only screen and  (max-width:  550px){
+    
+    .main-tab{
+        display:block;
+        width: 90%;
+        height: 100vh;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .main-tab .first-tab{
+        background: hsla(31, 77%, 52%);
+        font-size: 16px;
+        height: 500px;
+        width: 100%;
+        padding: 40px 30px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+}
+.main-tab .third-tab{
+    background: hsla(179, 0%, 13%);
+    font-size: 16px;
+    height: 500px;
+    width: 100%;
+    padding: 40px 30px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+}
+}
+
+@media only screen and  (max-width:  375px){
+    
+    .main-tab{
+        display:block;
+        width: 90%;
+        height: 100vh;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .main-tab .first-tab{
+        background: hsla(31, 77%, 52%);
+        font-size: 16px;
+        height: 500px;
+        width: 100%;
+        padding: 40px 30px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+}
+.main-tab .third-tab{
+    background: hsla(179, 0%, 13%);
+    font-size: 16px;
+    height: 500px;
+    width: 100%;
+    padding: 40px 30px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+}
+} 
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="wrapper">
-            <div class="sedans">
-                <div class="text-area">
-                    <h3>SEDANS</h3>
-                    <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your nexr road trip</p>
-                </div>
-                <div class="learn-more">
-                    <h3>Learn More</h3>
-                </div>
+      <div class="main-tab">
+        <!-- first-tab -->
+        <div class="first-tab">
+          <img src="/resources/icon-sedans.svg" alt="" />
+          <h1>SEDANS</h1>
+          <p>
+            Choose a sedan for it's affordability and excellent fuel
+            economy.ideal for cruising in the city or on your next road trip
+          </p>
+          <div class="btn-1">
+            <a class="a-first" href="#"> Learn More</a>
+          </div>
+        </div>
+        <!-- second-tab -->
+        <div class="second-tab">
+          <img src="/resources/icon-suvs.svg" alt="" />
+          <h1>SUV</h1>
+          <p>
+            Take an SUV for it's spacious interior, power and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
 
-            </div>
-            <div class="suvs">
-                <div class="text-area">
-                <h3>SUVS</h3>
-                <p>Take on SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
-            </div>
-                <div class="learn-more">
-                    
-                    <h3>Learn More</h3>
-                </div>
-                </div>
-                            <div class="luxury">
-                                <div class="text-area"> 
-                                <h3>LUXURY</h3>
-                <p>Cruise in the best car brands without the bloated prices.
-                    Enjoy the enhanced comfort of a luxury rental and arrive in style.
-                </p>
-                </div>
-                <div class="learn-more">
-                    <h3>Learn More</h3>
-                </div>
-
-                            </div>
+          <div class="btn-1">
+            <a class="a-second" href="#"> Learn More</a>
+          </div>
         </div>
 
+        <!-- third-tab -->
+        <div class="third-tab">
+          <img src="/resources/icon-luxury.svg" alt="" />
+          <h1>LUXURY</h1>
+
+          <p>
+            Big Shoulders Cruise in the best car brands without the bloated
+            prices. Enjoy the enhanced comfort of a luxury rental and arrive in
+            style.
+          </p>
+
+          <div class="btn-3">
+            <a class="a-third" href="#"> Learn More</a>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
