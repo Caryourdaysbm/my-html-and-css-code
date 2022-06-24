@@ -22,7 +22,7 @@ html,body {
 }
 
 .wrapper{
-width: 75%;
+width: 50%;
 margin: 0 auto;
 
 }
@@ -118,6 +118,7 @@ margin-top: 5px;
     font-weight: 700;
     font-size: 1.2rem;
     text-align: center;
+    cursor: pointer;
 }
 .cl-percent:active {
     background-color: hsl(185, 41%, 84%);
@@ -131,6 +132,7 @@ margin-top: 5px;
     font-weight: 700;
     font-size: 1.2rem;
     text-align: center;
+    cursor: pointer;
 
 }
 .right{
