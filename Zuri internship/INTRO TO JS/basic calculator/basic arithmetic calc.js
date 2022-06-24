@@ -1,25 +1,25 @@
 function sumNumber(num1, num2){
     var result = parseFloat(num1) + parseFloat(num2);
-    console.log(result);
+    alert (result)
 
 }
 function subtractNumber(num1, num2){
     var result = parseFloat(num1) - parseFloat(num2);
-    console.log(result);
+    alert (result)
 
 }
 function multiplyNumber(num1, num2){
     var result = parseFloat(num1) * parseFloat(num2);
-    console.log(result);
+    alert (result)
 }
 function divideNumber(num1, num2){
     var result = parseFloat(num1) / parseFloat(num2);
-    console.log(result);
+    alert (result)
 
 }
 function modNumber(num1, num2){
     var result = parseFloat(num1) % parseFloat(num2);
-    console.log(result);
+    alert (result)
 }
 
 var num1 = prompt('input a first number')
@@ -39,5 +39,5 @@ else if (operator == '%' ){
     modNumber(num1, num2)
 }
 else {
-    console.log("please input a basic math operator")
+    alert("please input a basic math operator")
 }
