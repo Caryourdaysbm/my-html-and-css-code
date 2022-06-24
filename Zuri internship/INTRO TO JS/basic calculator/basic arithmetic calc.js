@@ -14,7 +14,11 @@ function multiplyNumber(num1, num2){
 }
 function divideNumber(num1, num2){
     var result = parseFloat(num1) / parseFloat(num2);
+<<<<<<< HEAD
     alert (result)
+=======
+   alert (result);
+>>>>>>> 8f8b8064907cfc6bfded3f2ac353de61ec0ff373
 
 }
 function modNumber(num1, num2){
