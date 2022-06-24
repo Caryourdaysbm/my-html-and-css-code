@@ -1,4 +1,4 @@
-##zuri-simple-Calculator
+#zuri-simple-Calculator
 
 project on building a simple calculator without frontend design
 
