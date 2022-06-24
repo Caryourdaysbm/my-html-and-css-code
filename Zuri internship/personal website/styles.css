@@ -66,6 +66,7 @@ html, body{
      padding: 10px 15px;
      border-radius: 20px;
      transition: transform .4s;
+     cursor: pointer;
  }
 .btn:hover, .btn_2:hover{
      transform: scale(1.1);
