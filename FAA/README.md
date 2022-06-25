@@ -1,2 +1,2 @@
-To preview tip calculator project, click
+To preview tip calculator frontend development, click
 https://Tip-calculator.caryourdaysbm.repl.co
