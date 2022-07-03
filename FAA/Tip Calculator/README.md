@@ -42,8 +42,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Caryourdaysbm/my-html-and-css-code/tree/main/FAA/Tip%20Calculator)
+- Live Site URL: (https://Tip-calculator.caryourdaysbm.repl.co)
 
 ## My process
 
@@ -99,9 +99,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Oluwakayode Adeyemi](https://personal-website-1.caryourdaysbm.repl.co)
+- Frontend Mentor - [@Caryourdaysbm](https://www.frontendmentor.io/profile/Caryourdaysbm)
+- Twitter - [@caryourday_sbm](https://www.twitter.com/yourusername)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
