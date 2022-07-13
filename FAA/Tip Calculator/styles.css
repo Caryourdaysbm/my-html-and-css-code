@@ -11,6 +11,7 @@ html,body {
     width: 100%;
     display: flex;
     justify-content: center;
+align-items: center;
 }
 .wrapper .header{
     text-align: center;
@@ -35,7 +36,7 @@ margin: 0 auto;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    padding: 1rem 2rem;
+   
     
 }
 .left, .right{
@@ -105,8 +106,8 @@ margin-top: 5px;
 .percents{
     display: flex;
     gap: 10px;
-    flex-wrap: wrap
-    
+    flex-wrap: wrap;
+
     
 }
 .cl-percent {
@@ -123,8 +124,9 @@ margin-top: 5px;
 .cl-percent:active {
     background-color: hsl(185, 41%, 84%);
 }
-.cl-percent-custom{
+.cl-percent.cl-percent-custom {
     background-color: hsl(189, 41%, 97%);
+    
     padding: 0.5rem 0;
     border-radius: 5px;
     width: 30%;
@@ -135,6 +137,29 @@ margin-top: 5px;
     cursor: pointer;
 
 }
+.cl-percent.cl-percent-custom {
+    background: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+
+  }
+  .cl-percent.cl-percent-custom::placeholder {
+    color: hsl(186, 14%, 43%);
+  }
+  .cl-percent.cl-percent-custom:hover,
+.cl-percent.cl-percent-custom:focus {
+  background-color: hsl(189, 41%, 97%);
+  outline-width: 1px;
+  outline-color: hsl(172, 67%, 45%);
+}
+.cl-percent.cl-percent-custom:out-of-range{
+    color: red;
+    border-color: red;
+}
+.cl-percent.cl-percent-custom[type=number]::-webkit-inner-spin-button,
+.cl-percent.cl-percent-custom[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
 .right{
     background-color: hsl(183, 100%, 15%);
     border-radius: 10px;
@@ -143,17 +168,7 @@ margin-top: 5px;
     flex-direction: column;
     justify-content: space-between;
 }
-/* Frontend Mentor */
-.attribution {
-    position: absolute;
 
-    bottom: 1px;
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
 @media screen and (max-width:760px){
     .wrapper {
         width: 90%;
@@ -219,3 +234,14 @@ font-weight: 700;
 .reset-btn:active{
     background-color: hsl(185, 41%, 84%);
 }
+/* Frontend Mentor */
+.attribution {
+    position: absolute;
+
+    bottom: 1px;
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
