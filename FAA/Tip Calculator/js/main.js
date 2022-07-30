@@ -10,18 +10,22 @@ let tipPercentage = 0;
 
 billEl.addEventListener('keyup', e => {
     billAmount = Number(e.target.value);
+    calculateTip();
 })
 
 noOfPeopleEl.addEventListener('keyup', e => {
     noOfPeople = Number(e.target.value);
+    calculateTip();
 })
 
 Array.from(tipPercentagesEl).forEach(tipPercentages => {
     tipPercentages.addEventListener('click', e => {
         if (e.target.innerText.includes("%")) {
-            tipPercentage = Number(e.target.innerText.replace("%", ""));}
-        })
-})
+            tipPercentage = Number(e.target.innerText.replace("%", ""));
+            calculateTip();
+        }
+        });
+});
 function calculateTip(){
     let tipAmount = billAmount * (tipPercentage/100);
     let totalAmount = billAmount + tipAmount; 
@@ -30,7 +34,19 @@ function calculateTip(){
     updateValues({tipAmountPerPerson, totalAmountPerPerson});
 }
 
-function updateValues({tipAmountPerPerson, totalAmountPerPerson}){
-tipAmountPerPersonEl.innerText = tipAmount.toFiixed(2);
-totalAmountPerPersonEl.innerText=totalAmount.toFiixed(2);
-}
+function updateValues({ tipAmountPerPerson, totalAmountPerPerson }) {
+    tipAmountPerPersonEl.innerText =
+      tipAmountPerPerson == Infinity ? 0 : tipAmountPerPerson.toFixed(2);
+    totalAmountPerPersonEl.innerText =
+      totalAmountPerPerson == Infinity ? 0 : totalAmountPerPerson.toFixed(2);
+  }
+  
+  function applyActiveClass(innerTextPect) {
+    Array.from(tipPercentages).forEach((tipPercentageEl) => {
+      if (tipPercentageEl.innerText == innerTextPect) {
+        tipPercentageEl.classList.add("active");
+      } else {
+        tipPercentageEl.classList.remove("active");
+      }
+    });
+  }
