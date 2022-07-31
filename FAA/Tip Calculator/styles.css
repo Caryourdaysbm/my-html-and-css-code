@@ -7,7 +7,7 @@
 html,body {
     font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@ margin: 0 auto;
 .calc{
     width: 100%;
     background-color:hsl(0, 0%, 100%) ;
-    padding: 1.5rem;
+    padding: 0.6rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -53,12 +53,12 @@ margin: 0 auto;
 }
 
 .cl-input{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .cl-input label, .percents-title{
     color: hsl(184, 14%, 56%);
     font-size: 0.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 .bill-input{
     width: 100%;
@@ -241,7 +241,7 @@ font-weight: 700;
 /* Frontend Mentor */
 .attribution {
     position: absolute;
-    bottom: 1px;
+    top:95vh;
     font-size: 11px;
     text-align: center;
   }
