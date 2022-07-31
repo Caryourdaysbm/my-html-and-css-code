@@ -238,8 +238,13 @@ font-weight: 700;
 /* Frontend Mentor */
 .attribution {
     position: absolute;
+<<<<<<< HEAD
     top: 95vh;
     font-size:11px;
+=======
+    top:95vh;
+    font-size: 11px;
+>>>>>>> 71f7701b20f20bc99f43d3a842c982b5a89a247c
     text-align: center;
   }
   .attribution a {
