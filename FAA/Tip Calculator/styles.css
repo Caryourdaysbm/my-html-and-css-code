@@ -238,8 +238,7 @@ font-weight: 700;
 /* Frontend Mentor */
 .attribution {
     position: absolute;
-
-    bottom: 20px;
+    bottom: 1px;
     font-size: 11px;
     text-align: center;
   }
