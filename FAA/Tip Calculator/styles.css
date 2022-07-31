@@ -21,9 +21,6 @@ align-items: center;
     font-size: 1rem;
     padding: 10px;
 }
-.header{
-    margin: 10px auto;
-}
 
 .wrapper{
 width: 65%;
@@ -167,7 +164,7 @@ margin-top: 5px;
 .right{
     background-color: hsl(183, 100%, 15%);
     border-radius: 10px;
-    padding: 2rem 1.5rem;
+    padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -241,8 +238,13 @@ font-weight: 700;
 /* Frontend Mentor */
 .attribution {
     position: absolute;
+<<<<<<< HEAD
+    top: 95vh;
+    font-size:11px;
+=======
     top:95vh;
     font-size: 11px;
+>>>>>>> 71f7701b20f20bc99f43d3a842c982b5a89a247c
     text-align: center;
   }
   .attribution a {
