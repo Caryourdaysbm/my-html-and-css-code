@@ -1,52 +1,90 @@
-let billEl = document.querySelector("#bill");
-let noOfPeopleEl = document.querySelector("#people");
-let tipPercentagesEl = document.querySelectorAll(".cl-percent");
-let tipAmountPerPersonEl = document.querySelector("#tip-per-person");
-let totalAmountPerPersonEl = document.querySelector("#total-per-person");
 
-let billAmount = 0;
-let noOfPeople = 0;
-let tipPercentage = 0;
+// Variable declarations
 
-billEl.addEventListener('keyup', e => {
-    billAmount = Number(e.target.value);
-    calculateTip();
-})
+const bill = document.getElementById("bill");
+const buttons = document.querySelectorAll(".cl-percent");
+const people = document.getElementById("people");
+const custom = document.getElementById("custom");
+let tipResult = document.getElementById("tip-per-person");
+let totalResult = document.getElementById("total-per-person");
+let reset = document.querySelector(".reset-btn");
+const generatedText = document.querySelectorAll(".generated");
+const billSect = document.querySelector("#bill-div");
+const peopleSect = document.querySelector("#people-div");
 
-noOfPeopleEl.addEventListener('keyup', e => {
-    noOfPeople = Number(e.target.value);
-    calculateTip();
-})
+// Input validations
 
-Array.from(tipPercentagesEl).forEach(tipPercentages => {
-    tipPercentages.addEventListener('click', e => {
-        if (e.target.innerText.includes("%")) {
-            tipPercentage = Number(e.target.innerText.replace("%", ""));
-            calculateTip();
-        }
-        });
+bill.addEventListener("input", () => {
+	if (bill.value != 0) {
+		bill.classList.add("valid");
+		bill.classList.remove("inValid");
+		generatedText[0].innerHTML = "";
+	} else if (bill.value == 0 || bill.value == "") {
+		bill.classList.remove("valid");
+		bill.classList.add("inValid");
+		generatedText[0].innerHTML = `Can't be zero`;
+	}
 });
-function calculateTip(){
-    let tipAmount = billAmount * (tipPercentage/100);
-    let totalAmount = billAmount + tipAmount; 
-    let tipAmountPerPerson = tipAmount / noOfPeople;
-    let totalAmountPerPerson = totalAmount / noOfPeople;
-    updateValues({tipAmountPerPerson, totalAmountPerPerson});
+
+people.addEventListener("input", () => {
+	if (people.value != 0) {
+		people.classList.add("valid");
+		people.classList.remove("inValid");
+		generatedText[1].innerHTML = "";
+	} else if (people.value == 0 || people.value == "") {
+		people.classList.remove("valid");
+		people.classList.add("inValid");
+		generatedText[1].innerHTML = `Can't be zero`;
+	}
+});
+
+custom.addEventListener("click", () => {
+	if (bill.value == "") {
+		generatedText[0].innerHTML = `Add Bill Amount`;
+	}
+	if (people.value == "") {
+		generatedText[1].innerHTML = `Add Number of people`;
+	}
+});
+
+// Button functions
+
+buttons.forEach((btn) => {
+	let btnVal = btn.value;
+
+	btn.addEventListener("click", calculateTip);
+
+	function calculateTip() {
+		tip = parseFloat(bill.value) * btnVal;
+		tipPerPerson = tip / parseFloat(people.value);
+		billPerPerson = parseFloat(bill.value) / parseFloat(people.value);
+		totalPerPerson = billPerPerson + tipPerPerson;
+
+		tipResult.innerHTML = `$${tipPerPerson.toFixed(2)}`;
+		totalResult.innerHTML = `$${totalPerPerson.toFixed(2)}`;
+	}
+});
+
+custom.addEventListener("input", customTip);
+
+function customTip() {
+	tip = parseFloat(bill.value) * (custom.value / 100);
+	tipPerPerson = tip / parseFloat(people.value);
+	billPerPerson = parseFloat(bill.value) / parseFloat(people.value);
+	totalPerPerson = billPerPerson + tipPerPerson;
+
+	tipResult.innerHTML = `$${tipPerPerson.toFixed(2)}`;
+	totalResult.innerHTML = `$${totalPerPerson.toFixed(2)}`;
 }
 
-function updateValues({ tipAmountPerPerson, totalAmountPerPerson }) {
-    tipAmountPerPersonEl.innerText =
-      tipAmountPerPerson == Infinity ? 0 : tipAmountPerPerson.toFixed(2);
-    totalAmountPerPersonEl.innerText =
-      totalAmountPerPerson == Infinity ? 0 : totalAmountPerPerson.toFixed(2);
-  }
-  
-  function applyActiveClass(innerTextPect) {
-    Array.from(tipPercentages).forEach((tipPercentageEl) => {
-      if (tipPercentageEl.innerText == innerTextPect) {
-        tipPercentageEl.classList.add("active");
-      } else {
-        tipPercentageEl.classList.remove("active");
-      }
-    });
-  }
+reset.addEventListener("click", () => {
+	custom.value = "";
+	bill.value = "";
+	people.value = "";
+	tipResult.textContent = "$0.00";
+	totalResult.textContent = "$0.00";
+	billSect.style.outline = "none";
+	peopleSect.style.outline = "none";
+	generatedText[0].innerHTML = "";
+	generatedText[1].innerHTML = "";
+});

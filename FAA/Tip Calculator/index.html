@@ -18,8 +18,8 @@
   <div class="calc" role="contentinfo">
     <div class="left">
         <div class="cl-input">
-            <label for="bill">Bill</label>
-            <div class="bill-input">
+            <label class="generated" for="bill">Bill</label>
+            <div id="bill-div" class="bill-input">
          <object data="design/images/icon-dollar.svg" type="image/jpg" aria-label="dollar-icon"></object>
             <input id ="bill" type="number" aria-label="bill" placeholder="0">
            
@@ -27,11 +27,11 @@
         </div>  
         <h2 class="percents-title">Select Tip %</h2>
         <div class="percents">
-            <div class="cl-percent">5%</div>
-            <div class="cl-percent">10%</div>
-            <div class="cl-percent">15%</div>
-            <div class="cl-percent">25%</div>
-            <div class="cl-percent">50%</div>
+            <button class="cl-percent" value="0.05">5%</button>
+            <button class="cl-percent" value="0.10">10%</button>
+            <button class="cl-percent" value="0.15">15%</button>
+            <button class="cl-percent" value="0.25">25%</button>
+            <button class="cl-percent" value="0.50">50%</button>
             <input
                 type="number"
                 placeholder="Custom"
@@ -41,8 +41,8 @@
               />
               </div>
         <div class="cl-input">
-          <label for="people">Number of People</label>
-          <div class="bill-input">
+          <label class="generated" for="people">Number of People</label>
+          <div id="people-div" class="bill-input">
             <object data="design/images/icon-person.svg" type="image/jpg" aria-label="person-icon"></object>
           <input id ="people" type="number" aria-label="Number of People" placeholder="0" min="1">
           
